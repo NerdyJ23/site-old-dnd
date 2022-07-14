@@ -1,0 +1,5 @@
+Create actual character Page [basic done]
+Make character edit sidebar [basic done]
+Make create character Page [basic done]
+Make delete character functionality
+Character Diary

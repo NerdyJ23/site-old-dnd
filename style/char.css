@@ -1,0 +1,282 @@
+@font-face
+{
+  font-family: "PrimeLight";
+  src: url("/style/fonts/Prime Light.otf");
+}
+@font-face
+{
+  font-family: "PrimeReg";
+  src: url("/style/fonts/Prime Regular.otf");
+}
+@font-face
+{
+  font-family: "Geo";
+  src: url("/style/fonts/Geomanist-Regular.otf");
+}
+html
+{
+  transition: 0.5s;
+}
+#main
+{
+  width: auto;
+  vertical-align: top;
+}
+#main #profile-pic
+{
+  border-style: double;
+  border-width: 5px;
+}
+#main .portrait-border
+{
+  padding: 64px;
+  background-image: url('/img/border.png');
+  background-size: 100% 100%;
+}
+#main .portrait
+{
+  width:100%;
+  display:block;
+}
+#profile
+{
+  overflow:hidden;
+}
+.portrait img
+{
+  width:220px;
+}
+.bars
+{
+  position:relative;
+}
+.prof_bonus
+{
+  width:50%;
+  margin-left:auto;
+  margin-right:auto;
+  margin-bottom:8px;
+}
+#uploadFile
+{
+  width:100%;
+  overflow:hidden;
+}
+.vis
+{
+  position:absolute;
+  flex:left;
+  margin-left:8px;
+  text-align:center;
+}
+#vis_1,#vis_0
+{
+  display:none;
+}
+hp
+{
+  /*background-color:#337ab7;
+  display:table;
+*/
+  color:white;
+  width:100%;
+  /*text-align:center;*/
+  padding-top:4px;
+  padding-bottom:4px;
+  /*overflow:visible;*/
+  z-index:2;
+}
+.right, .left
+{
+  position:absolute;
+  top:-48px;
+  z-index:2;
+  width: 12%;
+}
+.left
+{
+  left:10%;
+  margin-right:180px;
+}
+.right
+{
+  right:10%;
+  margin-left:180px;
+}
+.admin
+{
+  display:inline-block;
+  text-decoration:none;
+  width:3vw;
+  padding:8px;
+  margin:8px;
+  background-color:rgba(150,150,150,0.2);
+}
+#edit
+{
+  margin:0;
+  margin-bottom:32px;
+}
+.hp button
+{
+  display:block;
+}
+#expcontainer
+{
+  width:60% !important;
+}
+exp:hover > #exp_text
+{
+  display:block;
+}
+#exp_text
+{
+  display:none;
+}
+#hpcontainer
+{
+  display:flex;
+  position:relative;
+  text-align:center;
+  margin-top: 8px;
+  margin-left:auto;
+  margin-right:auto;
+  width: 60%;
+  min-width:100px;
+  background-color:rgba(0,0,0,0.4);
+  border: 1px solid black;
+  border-radius: 2px;
+}
+#fade
+{
+  text-align:center;
+  display:flex;
+  margin-left:auto;
+  margin-right:auto;
+  background-color:red;
+  z-index:1;
+}
+#fade, hp
+{
+  transition: width 1s;
+}
+
+#stat-bar
+{
+  width:20vw;
+}
+
+#stat-vals
+{
+  width:100%;
+}
+.stat
+{
+  float:left;
+  width:40%
+}
+.abilities
+{
+  /*padding-left:8px;*/
+  width:55%;
+  text-align:left;
+  float:right;
+  font-size:90%;
+}
+.prof
+{
+    visibility: hidden;
+}
+stat
+{
+  background-color: rgba(0,0,0,0.2);
+  overflow:hidden;
+  border:1px solid black;
+  border-radius: 5px;
+  margin-bottom: 12px;
+  margin-right: 8px;
+  padding:8px;
+  display:block;
+  color:black;
+}
+stat .stat-vals
+{
+  display:inline-block;
+  width:100%;
+  margin:0;
+  border: 1px solid grey;
+  text-align:center;
+}
+stat .name
+{
+  display:block;
+  text-align:center;
+  width:100%;
+}
+stat h4
+{
+  margin: 4px;
+}
+#main h3
+{
+  font-family: 'Geo';
+}
+table
+{
+  padding:8px;
+}
+.tab
+{
+  position:absolute;
+  right: 16px;
+  top: 250px;
+  display:inline-block;
+  float:right;
+  padding-right:8px;
+  width:8%;
+}
+.tab button
+{
+  margin-top:4px;
+  background-color:rgba(0,0,0,0.4);
+  border:none;
+  padding:10px;
+  text-decoration:none;
+  width:100%;
+}
+.tab .active
+{
+  background-color:rgba(150,150,150,0.4);
+}
+#equipment
+{
+  margin-top: 16px;
+  display:none;
+}
+#wallet
+{
+  width:10vw;
+  display:inline-block;
+  vertical-align: top;
+  text-align:center;
+  background-color:rgba(0,0,0,0.4);
+  border: 1px solid black;
+  border-radius:5px;
+}
+#wallet span
+{
+  display:inline-block;
+  padding-right:8px;
+}
+#bag
+{
+  width:70%;
+  display:inline-block;
+  margin-left:64px;
+  text-align:center;
+  margin-right:auto;
+}
+#bag tr:nth-child(odd)
+{
+  background-color:rgba(0,0,0,0.1);
+}

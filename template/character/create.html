@@ -1,0 +1,20 @@
+<script src='/js/validateCreate.js'></script>
+<form method='POST' action='php/character/createChar.php' autocomplete='off' autocapitalization='off'>
+  <table>
+    <?php
+      //<tr><td><label>Portrait Picture: </label></td><td><input type='file' value='Upload Picture' name='fileToUpload'></input></td></tr>
+    ?>
+    <tr><td><label for='name'>Name: </label></td><td><input type='text' name="name" id="name" required></td></tr>
+    <tr><td><label for='class'>Class: </label></td><td><input type='text' name="class" id="class" placeholder='Rogue - 1, Bard -5' required></td></tr>
+    <tr><td><label for='race'>Race: </label></td><td><input type='text' name="race" id="race" required></td></tr>
+    <tr><td><label for='max_hp'>Max HP: </label></td><td><input type='text' name="max_hp" id="hp_max" class='num' required></td></tr>
+    <tr><td>&nbsp;</td><td></td></tr>
+    <tr><td><label for='str'>Strength: </label></td><td><input type='text' name="str" id="str" class='num' required></td></tr>
+    <tr><td><label for='dex'>Dexterity: </label></td><td><input type='text' name="dex" id="dex" class='num' required></td></tr>
+    <tr><td><label for='con'>Constitution: </label></td><td><input type='text' name="con" id="con" class='num' required></td></tr>
+    <tr><td><label for='int'>Intelligence: </label></td><td><input type='text' name="int" id="int" class='num' required></td></tr>
+    <tr><td><label for='wis'>Wisdom: </label></td><td><input type='text' name="wis" id="wis" class='num' required></td></tr>
+    <tr><td><label for='cha'>Charisma: </label></td><td><input type='text' name="cha" id="cha" class='num' required></td></tr>
+  </table>
+  <input type='submit' value='Create!'>
+</form>

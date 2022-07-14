@@ -1,0 +1,81 @@
+<link rel="stylesheet" type='text/css' href="/style/charstatsedit.css">
+<script src="/js/admin.js"></script>
+<div id='statsedit' class='sidenav'>
+  <h1 class='editText'> Edit </h1>
+  <div id='pane-content'>
+    <div id='editButtons'>
+      <input type='submit' class='editControl' id='deleteChar' value='Delete'>
+      <input type='submit' class='editControl' value='Save'>
+      <input type='submit' class='editControl' value='Cancel'>
+    </div>
+    <div class="sheet tabcontent">
+      <form id='form' class='form' autocomplete='off' autocapitalize='off'>
+
+        <table class='editText'>
+          <tr><td><label class='editText' id='portrait_url'>Portrait: </label></td><td><input type='file' value='Upload Picture' id='uploadFile' class = 'editText' name='fileToUpload'></td></tr>
+          <tr><td><label class='editText' >Visibility:</label></td><td><select name='vis' id='edit_vis'><option value='0'>Private</option><option value='1'>Public</option></select></tr>
+          <tr><td><label class='editText' for='name'>Name:</label></td><td><input type='text' name='name' value='' id='edit_name'></td></tr>
+          <tr><td><label class='editText' for='class'>Class:</label></td><td><input type='text' name='class' value='' id='edit_class'></td></tr>
+          <tr><td><label class='editText' for='race'>Race:</label></td><td><input type='text' name='race' value='' id='edit_race'></td></tr>
+          <tr><td><label class='editText' for='exp'>Exp:</label></td><td><input type='text' name='exp' value='' id='edit_exp'></td></tr>
+          <tr><td><label class='editText' for='max_hp'>Max HP:</label></td><td><input type='text' name='max_hp' value='' id='edit_maxhp'></td></tr>
+          <hr><tr></tr>
+        </table>
+        <table class='editText'>
+          <tr><td><label class='editText' for='str'>Strength:</label></td><td><input type='text' name='str' value='' id='edit_str'></td></tr>
+          <tr><td></td><td><input type='checkbox' class='editText' name='1_prof_edit' id='1_prof_edit'><label class='editText editProf' for='1_prof_edit'>Saving Throw</label></td></tr>
+          <tr><td></td><td><input type='checkbox' class='editText' name='2_prof_edit' id='2_prof_edit'><label class='editText editProf' for='2_prof_edit'>Athletics</label></td></tr>
+
+          <tr><td><label class='editText' for='dex'>Dexterity:</label></td><td><input type='text' name='dex' value='' id='edit_dex'></td></tr>
+          <tr><td></td><td><input type='checkbox' class='editText' name='3_prof_edit' id='3_prof_edit'><label class='editText editProf' for='3_prof_edit'>Saving Throw</label></td></tr>
+          <tr><td></td><td><input type='checkbox' class='editText' name='4_prof_edit' id='4_prof_edit'><label class='editText editProf' for='4_prof_edit'>Acrobatics</label></td></tr>
+          <tr><td></td><td><input type='checkbox' class='editText' name='5_prof_edit' id='5_prof_edit'><label class='editText editProf' for='5_prof_edit'>Sleight of Hand</label></td></tr>
+          <tr><td></td><td><input type='checkbox' class='editText' name='6_prof_edit' id='6_prof_edit'><label class='editText editProf' for='6_prof_edit'>Stealth</label></td></tr>
+
+          <tr><td><label class='editText' for='con'>Constitution:</label></td><td><input type='text' name='con' value='' id='edit_con'></td></tr>
+          <tr><td></td><td><input type='checkbox' class='editText' name='7_prof_edit' id='7_prof_edit'><label class='editText editProf' for='7_prof_edit'>Saving Throw</label></td></tr>
+
+          <tr><td><label class='editText' for='int'>Intelligence:</label></td><td><input type='text' name='int' value='' id='edit_int'></td></tr>
+          <tr><td></td><td><input type='checkbox' class='editText' name='8_prof_edit' id='8_prof_edit'><label class='editText editProf' for='8_prof_edit'>Saving Throw</label></td></tr>
+          <tr><td></td><td><input type='checkbox' class='editText' name='9_prof_edit' id='9_prof_edit'><label class='editText editProf' for='9_prof_edit'>Arcana</label></td></tr>
+          <tr><td></td><td><input type='checkbox' class='editText' name='10_prof_edit' id='10_prof_edit'><label class='editText editProf' for='10_prof_edit'>History</label></td></tr>
+          <tr><td></td><td><input type='checkbox' class='editText' name='11_prof_edit' id='11_prof_edit'><label class='editText editProf' for='11_prof_edit'>Investigation</label></td></tr>
+          <tr><td></td><td><input type='checkbox' class='editText' name='12_prof_edit' id='12_prof_edit'><label class='editText editProf' for='12_prof_edit'>Nature</label></td></tr>
+          <tr><td></td><td><input type='checkbox' class='editText' name='13_prof_edit' id='13_prof_edit'><label class='editText editProf' for='13_prof_edit'>Religion</label></td></tr>
+
+          <tr><td><label class='editText' for='wis'>Wisdom:</label></td><td><input type='text' name='wis' value='' id='edit_wis'></td></tr>
+          <tr><td></td><td><input type='checkbox' class='editText' name='14_prof_edit' id='14_prof_edit'><label class='editText editProf' for='14_prof_edit'>Saving Throw</label></td></tr>
+          <tr><td></td><td><input type='checkbox' class='editText' name='15_prof_edit' id='15_prof_edit'><label class='editText editProf' for='15_prof_edit'>Animal Handling</label></td></tr>
+          <tr><td></td><td><input type='checkbox' class='editText' name='16_prof_edit' id='16_prof_edit'><label class='editText editProf' for='16_prof_edit'>Insight</label></td></tr>
+          <tr><td></td><td><input type='checkbox' class='editText' name='17_prof_edit' id='17_prof_edit'><label class='editText editProf' for='17_prof_edit'>Medicine</label></td></tr>
+          <tr><td></td><td><input type='checkbox' class='editText' name='18_prof_edit' id='18_prof_edit'><label class='editText editProf' for='18_prof_edit'>Perception</label></td></tr>
+          <tr><td></td><td><input type='checkbox' class='editText' name='19_prof_edit' id='19_prof_edit'><label class='editText editProf' for='19_prof_edit'>Survival</label></td></tr>
+
+          <tr><td><label class='editText' for='cha'>Charisma:</label></td><td><input type='text' name='cha' value='' id='edit_cha'></td></tr>
+          <tr><td></td><td><input type='checkbox' class='editText' name='20_prof_edit' id='20_prof_edit'><label class='editText editProf' for='20_prof_edit'>Saving Throw</label></td></tr>
+          <tr><td></td><td><input type='checkbox' class='editText' name='21_prof_edit' id='21_prof_edit'><label class='editText editProf' for='21_prof_edit'>Deception</label></td></tr>
+          <tr><td></td><td><input type='checkbox' class='editText' name='22_prof_edit' id='22_prof_edit'><label class='editText editProf' for='22_prof_edit'>Intimidation</label></td></tr>
+          <tr><td></td><td><input type='checkbox' class='editText' name='23_prof_edit' id='23_prof_edit'><label class='editText editProf' for='23_prof_edit'>Performance</label></td></tr>
+          <tr><td></td><td><input type='checkbox' class='editText' name='24_prof_edit' id='24_prof_edit'><label class='editText editProf' for='24_prof_edit'>Persuasion</label></td></tr>
+
+        </table>
+    </div>
+
+    <div class='equipment tabcontent' style='display:none'>
+        <table>
+          <tr><td><label class='editText' for='cp'>Copper: </label></td><td><input type='text' name='cp' value='0' id='edit_cp'></td></tr>
+          <tr><td><label class='editText' for='sp'>Silver: </label></td><td><input type='text' name='sp' value='0' id='edit_sp'></td></tr>
+          <tr><td><label class='editText' for='ep'>Electrum: </label></td><td><input type='text' name='ep' value='0' id='edit_ep'></td></tr>
+          <tr><td><label class='editText' for='gp'>Gold: </label></td><td><input type='text' name='gp' value='0' id='edit_gp'></td></tr>
+          <tr><td><label class='editText' for='pp'>Platinum: </label></td><td><input type='text' name='pp' value='0' id='edit_pp'></td></tr>
+        </table>
+      </form>
+    </div>
+  </div>
+
+  <div class='delete_warning tabcontent' style='display:none'>
+    <p>Are you sure you want to delete "<span class='displayName'></span>"?</p>
+    <input type='submit' class = 'admin' value='Yes' id='delete_yes'>
+    <input type='submit' class = 'admin' value='No' id='delete_no'>
+  </div>
+</div>

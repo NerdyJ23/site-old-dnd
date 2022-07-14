@@ -1,0 +1,71 @@
+.sidenav
+{
+  height:100%;
+  width:0;
+  overflow-y:scroll;
+  position:fixed;
+  z-index:1;
+  top: 0;
+  left: 0;
+  overflow-x:hidden;
+  transition: 0.5s;
+  padding-top:20px;
+  background-color:rgba(0,0,0,0.9);
+}
+
+#editButtons
+{
+  position:absolute;
+  top: 0;
+  right: 0;
+  margin: 8px 16px;
+  display:block;
+  overflow:hidden;
+}
+#deleteChar
+{
+  color:red;
+  border: 1px solid red;
+  left:0 !important;
+}
+.editControl
+{
+  display:inline-block;
+  color:white;
+  border:1px solid grey;
+  padding:4px;
+  background-color:rgba(0,0,0,1);
+}
+.editText
+{
+  color:white;
+}
+.editText td
+{
+  text-align:left;
+}
+.editProf
+{
+  font-size:90%;
+}
+.editText:checked + .editProf
+{
+  color:grey;
+  font-weight:bold;
+}
+.delete_warning
+{
+  color:red;
+  font-weight:bold;
+  text-align:center;
+  margin: 16px;
+}
+label .editText
+{
+  margin-left: 8px;
+  margin-right: 6px;
+}
+input[type=submit]
+{
+  color:white;
+}
